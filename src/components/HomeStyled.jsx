@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo3.jpeg";
-import imagen from "../assets/imagen.jpeg";
+import imagen from "../assets/imagen2.jpeg";
 import "../index.css";
 
 const HomeStyled = () => {
