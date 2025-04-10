@@ -29,11 +29,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Ignorar imágenes
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-*.svg
