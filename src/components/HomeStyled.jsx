@@ -20,7 +20,18 @@ const HomeStyled = () => {
 
           <nav className="relative flex items-center justify-between px-4 sm:px-6 lg:px-8 pt-6">
             <div className="flex items-center">
-              <img className="h-16 w-auto" src={logo} alt="Logo" />
+              <img className="h-20 w-20 rounded-full object-cover" src={logo} alt="Logo" />
+            </div>
+            <div className="flex items-center">
+              <a
+                href="https://linktr.ee/ranapintada?fbclid=PAZXh0bgNhZW0CMTEAAaapvXw4NqsuLPCxxwHGNSSUqIpPv_ozyqWZCSFsgDKQ5LmJ_lbrLBtnnKI_aem_NSzJMmprHMfBYi3BAlGFrQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#FCD7CF] text-[#7d6d64] font-semibold py-2 px-6 rounded-full shadow hover:bg-[#FBE0DA] hover:shadow-md transition duration-300 ease-in-out"
+                style={{ fontFamily: "Monaco" }}
+              >
+                Contáctanos
+              </a>
             </div>
           </nav>
 
@@ -31,7 +42,7 @@ const HomeStyled = () => {
                   <span className="text-[#7d6d64]">La Rana Pintada</span>
                 </span>
               </h1>
-              <p className="text-[#FFC1B2] text-2xl mt-2" style={{ fontFamily: "Monaco" }}>
+              <p className="text-[#DEB887] text-2xl mt-2" style={{ fontFamily: "Monaco" }}>
                 @laranapintada
               </p>
               <p className="mt-3 text-gray-500 text-lg sm:mt-5 sm:text-xl md:mt-5 lg:mx-0" style={{ fontFamily: "Garamond" }}>

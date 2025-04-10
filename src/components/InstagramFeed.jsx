@@ -71,9 +71,28 @@ const InstagramFeed = ({ userId }) => {
           const caption = cleanCaption(post.caption?.text);
 
           return (
-            <div key={index} className="relative group cursor-pointer" onClick={() => setSelectedPost(post)}>
+            <div
+              key={index}
+              className="relative group cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              onClick={() => setSelectedPost(post)}
+            >
               {videoUrl ? (
-                <video src={videoUrl} controls className="w-full h-auto rounded-lg shadow-lg" />
+                <div className="relative group transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                  <video
+                    src={videoUrl}
+                    controls
+                    className="w-full h-auto rounded-lg shadow-lg opacity-90 group-hover:opacity-75 transition duration-300"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-12 h-12 text-white opacity-80 group-hover:opacity-100 transition duration-300"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M6.5 5.5v9l7-4.5-7-4.5z" />
+                    </svg>
+                  </div>
+                </div>
               ) : imageUrl ? (
                 <>
                   <img src={imageUrl} alt={caption} className="w-full h-auto rounded-lg shadow-lg" />
@@ -100,18 +119,6 @@ const InstagramFeed = ({ userId }) => {
           />
         </div>
       )}
-
-      {/* Botón Contáctanos debajo de las publicaciones */}
-      <div className="flex mt-6">
-        <a
-          href="https://linktr.ee/ranapintada?fbclid=PAZXh0bgNhZW0CMTEAAaapvXw4NqsuLPCxxwHGNSSUqIpPv_ozyqWZCSFsgDKQ5LmJ_lbrLBtnnKI_aem_NSzJMmprHMfBYi3BAlGFrQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#FFC1B2] font-bold py-2 px-4 rounded-full shadow-lg hover:bg-[#5c5148] transition duration-300"
-        >
-          Contáctanos
-        </a>
-      </div>
     </div>
   );
 };
